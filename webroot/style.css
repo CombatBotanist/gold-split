@@ -1,0 +1,124 @@
+*,*:focus,*:hover{
+  outline: none;
+}
+
+html {
+  font-family: sans-serif;
+  background-image: radial-gradient(rgb(255, 199, 56), rgb(53, 53, 53));
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+}
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+.container:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+#gold-split {
+  display: flex;
+  flex-direction: column;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+.form-field:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.form-field .form-label {
+  margin-bottom: 5px;
+  font-size: 1.4em;
+}
+.form-field input {
+  padding: 10px;
+  font-size: 1.2em;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border 0.25s;
+}
+.form-field input:focus {
+  border: 2px solid rgb(255, 199, 56) !important;
+}
+.form-field input[type="number"] {
+  width: 100%;
+}
+.form-field input[type="number"]::-webkit-inner-spin-button, .form-field input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.form-field input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+#gold-split > hr {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border-top: 1px solid rgb(255, 199, 56);
+}
+
+.toggle {
+  cursor: pointer;
+}
+.toggle-switch {
+  background: #ccc;
+  border-radius: 16px;
+  width: 58px;
+  height: 32px;
+  position: relative;
+  vertical-align: middle;
+  transition: background 0.25s;
+}
+.toggle-switch:before, .toggle-switch:after {
+  content: "";
+}
+.toggle-switch:before {
+  display: block;
+  background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: left 0.25s;
+}
+.toggle:hover .toggle-switch:before {
+  background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+.toggle-checkbox:checked + .toggle-switch {
+  background: rgb(255, 199, 56);
+}
+.toggle-checkbox:checked + .toggle-switch:before {
+  left: 30px;
+}
+.toggle-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+#result > div:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.result-label {
+  font-size: 1.4em;
+  margin-bottom: 5px;
+}
+.result-value {
+  font-size: 1.2em;
+  font-weight: bold;
+}

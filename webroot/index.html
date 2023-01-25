@@ -1,0 +1,63 @@
+<head>
+    <title>Gold Split</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title" class="container">
+        <h1>Party Gold Split</h1>
+    </div>
+    <div id="form" class="container form">
+        <form id="gold-split">
+            <label for="platinum" class="form-field">
+                <span class="form-label">Platinum</span>
+                <input id="platinum" class="selectable currency" type="number" value="0" min="0">
+            </label>
+            <label for="gold" class="form-field">
+                <span class="form-label">Gold</span>
+                <input id="gold" class="selectable currency" type="number" value="50" min="0" autofocus>
+            </label>
+            <label for="silver" class="form-field">
+                <span class="form-label">Silver</span>
+                <input id="silver" class="selectable currency" type="number" value="0" min="0">
+            </label>
+            <label for="copper" class="form-field">
+                <span class="form-label">Copper</span>
+                <input id="copper" class="selectable currency" type="number" value="0" min="0">
+            </label>
+            <hr>
+            <label for="party-size" class="form-field">
+                <span class="form-label">Party Size</span>
+                <input id="party-size" class="selectable" type="number" value="3" min="2">
+            </label>
+            <hr>
+            <label for="split-remainder" class="toggle form-field">
+                <span class="form-label">Split remainder into lower denomination coins</span>
+                <input id="split-remainder" class="toggle-checkbox" type="checkbox">
+                <div class="toggle-switch"></div>
+            </label>
+            <!-- <label for="combine" class="toggle form-field">
+                <span class="form-label">Convert extra lower denomination coins into higher denominations</span>
+                <input id="combine" class="toggle-checkbox" type="checkbox">
+                <div class="toggle-switch"></div>
+            </label> -->
+        </form>
+    </div>
+    <div id="result" class="container">
+        <div>
+            <div class="result-label">Platinum</div>
+            <div id="result-platinum" class="result-value">0</div>
+        </div>
+        <div>
+            <div class="result-label">Gold</div>
+            <div id="result-gold" class="result-value">0</div>
+        </div>
+        <div>
+            <div class="result-label">Silver</div>
+            <div id="result-silver" class="result-value">0</div>
+        </div>
+        <div>
+            <div class="result-label">Copper</div>
+            <div id="result-copper" class="result-value">0</div>
+        </div>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
